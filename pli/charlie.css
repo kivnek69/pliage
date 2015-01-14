@@ -1,83 +1,93 @@
 @CHARSET "ISO-8859-1";
 
+#livre{
+	position: absolute;
+	left: 200px;
+}
+
 .carte{
 	position: 			absolute;
 	width: 				200px;
 	height: 			200px;
+	font-size:			20px;
+	font-weight: 		bolder;
+	color:				darkgrey;
 }
 
 #carte_1{
 	background-color: 	aqua;
-	left: 				500px;
-	top:				100px;
-	width: 				400px;
-	height: 			400px;
+	left: 				0px;
+	top:				0px;
 }
 
 #carte_2{
 	background-color: 	fuchsia;
-	left: 				300px;
-	top:				300px;
+	left: 				0px;
+	top:				200px;
 }
 
 #carte_3{
 	background-color: 	gray;
-	left: 				300px;
-	top:				500px;
+	left: 				200px;
+	top:				200px;
 }
 
 #carte_4{
 	background-color: 	olive;
-	left: 				100px;
-	top:				500px;
+	left: 				400px;
+	top:				200px;
 }
 
 #carte_5{
 	background-color: 	lime;
-	left: 				300px;
-	top:				700px;
+	left: 				0px;
+	top:				400px;
 }
 
 #carte_6{
 	background-color: 	maroon;
-	left: 				500px;
-	top:				700px;
+	left: 				600px;
+	top:				200px;
 }
 
 #carte_7{
 	background-color: 	orange;
-	left: 				700px;
-	top:				700px;
+	left: 				600px;
+	top:				400px;
 }
 
 #carte_8{
 	background-color: 	silver;
-	left: 				700px;
-	top:				900px;
+	left: 				600px;
+	top:				600px;
 }
 
 #carte_9{
 	background-color: 	red;
-	left: 				700px;
-	top:				1100px;
+	left: 				400px;
+	top:				600px;
 }
 
 #carte_10{
 	background-color: 	yellow;
-	left: 				500px;
-	top:				1100px;
+	left: 				200px;
+	top:				600px;
 }
 
 #carte_11{
 	background-color: 	purple;
-	left: 				500px;
-	top:				1300px;
+	left: 				0px;
+	top:				600px;
 }
 
 #carte_12{
 	background-color: 	teal;
-	left: 				500px;
-	top:				1500px;
-	width: 				400px;
-	height: 			400px;
+	left: 				0px;
+	top:				800px;
+}
+
+#carte_13{
+	background-color: 	lime;
+	left: 				0px;
+	top:				400px;
 }
