@@ -238,19 +238,19 @@ var zoom = (function(){
 		 * @param {Object} options
 		 *   - callback: call back when zooming out ends
 		 */
-		out: function( options ) {
-			clearTimeout( panEngageTimeout );
-			clearInterval( panUpdateInterval );
-			clearTimeout( callbackTimeout );
+		// out: function( options ) {
+			// clearTimeout( panEngageTimeout );
+			// clearInterval( panUpdateInterval );
+			// clearTimeout( callbackTimeout );
 
-			magnify( { x: 0, y: 0 }, 1 );
+			// magnify( { x: 0, y: 0 }, 1 );
 
-			if( options && typeof options.callback === 'function' ) {
-				setTimeout( options.callback, TRANSITION_DURATION );
-			}
+			// if( options && typeof options.callback === 'function' ) {
+				// setTimeout( options.callback, TRANSITION_DURATION );
+			// }
 
-			level = 1;
-		},
+			// level = 1;
+		// },
 
 		// Alias
 		magnify: function( options ) { this.to( options ) },
