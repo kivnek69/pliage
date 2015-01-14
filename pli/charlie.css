@@ -10,16 +10,74 @@
 	background-color: 	aqua;
 	left: 				500px;
 	top:				100px;
+	width: 				400px;
+	height: 			400px;
 }
 
 #carte_2{
 	background-color: 	fuchsia;
 	left: 				300px;
-	top:				100px;
+	top:				300px;
 }
 
 #carte_3{
 	background-color: 	gray;
 	left: 				300px;
-	top:				300px;
+	top:				500px;
+}
+
+#carte_4{
+	background-color: 	olive;
+	left: 				100px;
+	top:				500px;
+}
+
+#carte_5{
+	background-color: 	lime;
+	left: 				300px;
+	top:				700px;
+}
+
+#carte_6{
+	background-color: 	maroon;
+	left: 				500px;
+	top:				700px;
+}
+
+#carte_7{
+	background-color: 	orange;
+	left: 				700px;
+	top:				700px;
+}
+
+#carte_8{
+	background-color: 	silver;
+	left: 				700px;
+	top:				900px;
+}
+
+#carte_9{
+	background-color: 	red;
+	left: 				700px;
+	top:				1100px;
+}
+
+#carte_10{
+	background-color: 	yellow;
+	left: 				500px;
+	top:				1100px;
+}
+
+#carte_11{
+	background-color: 	purple;
+	left: 				500px;
+	top:				1300px;
+}
+
+#carte_12{
+	background-color: 	teal;
+	left: 				500px;
+	top:				1500px;
+	width: 				400px;
+	height: 			400px;
 }
