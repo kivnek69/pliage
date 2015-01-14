@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+
+.carte{
+	position: 			absolute;
+	width: 				200px;
+	height: 			200px;
+}
+
+#carte_1{
+	background-color: 	aqua;
+	left: 				500px;
+	top:				100px;
+}
+
+#carte_2{
+	background-color: 	fuchsia;
+	left: 				300px;
+	top:				100px;
+}
+
+#carte_3{
+	background-color: 	gray;
+	left: 				300px;
+	top:				300px;
+}
