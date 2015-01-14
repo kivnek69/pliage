@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>zoom.js</title>
+
+		<meta name="description" content="A minimal JavaScript API which enables zooming in on elements or rectangles in a document.">
+		<meta name="author" content="Hakim El Hattab">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+				<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			</div>
+		</header>
+
+		<div class="page-body">
+	
+			<div id="1": style="width: 80px; height: 80px; margin-right: 10px; padding: 10px; float: left; background: green;">
+			</div>
+			<div id="2": style="width: 80px; height: 100px; position: relative; left: -50px; top: 200px; padding: 10px; margin-left: 50px; background: blue;"></div>
+				<div id="3": style="width: 100px; height: 50px; position: relative; right: 50px; top: 250px; background: red;">
+			</div>	
+			<div id="4": style="width: 100px; height: 70px; position: absolute; right: 50px; top: 250px; background: yellow;">	
+			</div>	
+			</div>
+		</div>
+		
+
+		<script src="js/zoom.js"></script>
+		<script>
+		//var id=1;
+		
+			document.querySelector( '.page-body' ).addEventListener( 'click', function( event ) {
+				//event.preventDefault();
+				var id_voulu = parseInt(event.target.id)+1;
+				
+				element = document.getElementById(id_voulu);
+				//alert (element);
+				zoom.to({ element: element });
+				//alert (id+1);
+			} );
+		</script>
+
+		<!-- Everything below this point is unrelated to the library -->
+
+		<script>
+		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+		(function(d, t) {
+		var g = d.createElement(t),
+		    s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+		</script>
+
+	</body>
+</html>
