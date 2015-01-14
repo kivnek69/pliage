@@ -16,6 +16,7 @@
 <meta name="description" content="How to use the latest Twitter 1.1 API, by NOE Interactive, by NOE Interactive" />
 <meta name="keywords" content="Twitter, oAuth, NOE Interactive, php" />
 <link rel="canonical" href="http://noe-interactive.com/demo/!/twitterapi"/>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
 
 </head>
 
@@ -26,10 +27,10 @@
                 <?php
 
                     //1 - Settings (please update to math your own)
-                    $consumer_key='dva9Y9gdPEcVOTVMxtKzwukj1'; //Provide your application consumer key
-                    $consumer_secret='F4LFXaglwhNGvoPrjrozo7LXFY3bcarna5fo8lPm0QK5sZqWAb'; //Provide your application consumer secret
-                    $oauth_token = '2893405781-ooi2dg0Kma7lqaLM94Q1Y1N8cy3Wl83vhc5hHod'; //Provide your oAuth Token
-                    $oauth_token_secret = 'C3g1cpdk1kYt6EBIdqb5BSvyB71sLo09mPooj6CEeQ3m2'; //Provide your oAuth Token Secret
+                    $consumer_key='3FhMfyyBiWRErK01r1YQVOWIS'; //Provide your application consumer key
+                    $consumer_secret='JlKHJiOtRf6E5ozfzPCUfauepYC7gegbo0Zu2Ytj7hIOUkGrmn'; //Provide your application consumer secret
+                    $oauth_token = '2978062462-ScTEgyxTKoiyqsQGOeFiiF6rtLhLOLZ2bZp3v8H'; //Provide your oAuth Token
+                    $oauth_token_secret = 'gg9Xx5wPN24spqwlEW1lEHi8Hc6LgAzI54eJlqvJFJN3P'; //Provide your oAuth Token Secret
 					  
                     //You can now copy paste the folowing
 
@@ -43,9 +44,10 @@
                     $connection = new TwitterOAuth($consumer_key, $consumer_secret, $oauth_token, $oauth_token_secret);
 
                     //4 - Start Querying
-                    $query = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=spatio_temporel&count=1'; //Your Twitter API query
+                    $query = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=c_hebdo'; //Your Twitter API query
                                       
-                    $content = $connection->get($query);                    
+                    $content = $connection->get($query);  
+				
                     }
                     
                     
@@ -56,7 +58,8 @@
                         
                             if(!empty($content)){ foreach($content as $tweet){
                                 echo'
-                                <div class="twitter_status" id="'.$tweet->id_str.'">
+								<div class="tweet">
+                                <div class="twitter_status">
                                     <div class="bloc_content">
                                         <p class="status tw_status">'.parseTweet($tweet->text).'</p>
                                     </div>
@@ -67,6 +70,7 @@
                                         </a>
                                         <span class="timestamp tw_timestamp">'.date('d M / H:i',strtotime($tweet->created_at)).'</span>
                                     </div>
+								</div>
                                 </div>';
                             }}
                                 echo'

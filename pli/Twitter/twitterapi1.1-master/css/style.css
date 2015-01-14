@@ -1,5 +1,4 @@
 /* General */
-
 #twintegration{
     margin: 20px 0;
 }
@@ -16,15 +15,8 @@
 }
 
 /* Exemple Latest Tweet */
-.tweet{
-	
-	margin-left:400px;
-	margin-right:400px;
-}
-
 .twitter_status{
-	background-image:url(images/tweet.jpg);
-   
+    background: white;
     -moz-box-shadow: 0px 1px 2px #ddd;
     -webkit-box-shadow: 0px 1px 2px #DDD;
     box-shadow: 0px 1px 2px #DDD;
@@ -32,7 +24,6 @@
     border: 1px solid #ddd;
     margin: 5px;
     float: left;
-	
 }
 .userimg{
     float: left;
