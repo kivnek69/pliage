@@ -183,6 +183,7 @@ var zoom = (function(){
 			// to another element without zooming out first
 			if( level !== 1 ) {
 				zoom.out();
+				//à modifier
 			}
 			else {
 				options.x = options.x || 0;
