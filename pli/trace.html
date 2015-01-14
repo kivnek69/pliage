@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lignes Bézier</title>
+<style>
+	body { margin:0px; background-color:lightgray;}
+	canvas { display:block; }
+</style>
+
+<script>
+window.onload = function(){
+	var canvas = document.getElementById('monCanvas'), 
+		context = canvas.getContext('2d'),
+		width = canvas.width = window.innerWidth,
+		height = canvas.height = window.innerHeight;
+	
+	context.strokeStyle = 'rgba(128,128,128,0.7)';
+	context.lineWidth = 3;
+	
+	for(var lignes = 0; lignes < 5; lignes++){
+		
+		// Courbes de Bézier
+		context.bezierCurveTo(
+			Math.random()*width, Math.random()*height, 
+			Math.random()*width, Math.random()*height, 
+			Math.random()*width, Math.random()*height);
+		
+	}
+	
+	context.stroke();
+	
+}
+</script>
+
+</head>
+
+<body>
+
+	<canvas id="monCanvas" width="700" height="400"></canvas>
+
+</body>
+</html>
