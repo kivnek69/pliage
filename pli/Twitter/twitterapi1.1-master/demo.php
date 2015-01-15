@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="skinNoe/skin.css" />
 
 <meta name='robots' content='noindex,nofollow' />
-<link rel='stylesheet' id='demo-css'  href='twitterapi.css' type='text/css' media='all' />
+<link rel='stylesheet' id='demo-css'  href='css/twitterapi.css' type='text/css' media='all' />
 
 <meta name="description" content="How to use the latest Twitter 1.1 API, by NOE Interactive, by NOE Interactive" />
 <meta name="keywords" content="Twitter, oAuth, NOE Interactive, php" />
