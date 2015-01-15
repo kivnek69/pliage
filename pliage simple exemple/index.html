@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>1984</title>
+		<link rel="stylesheet" href="charlie.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+		<!--<script type="text/javascript" src="jquery.zoomooz.min.js"></script>-->
+		
+		
+		
+		<link rel="stylesheet" href="website-assets/website.css" type="text/css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        
+	    
+	</head>
+	<body>
+		<div id="livre" style="perspective:500px">
+			<div id="1" class="carte carte_1" ></div>
+			<div id="2" class="carte carte_2" ></div>
+			<div id="3" class="carte carte_3" ></div>
+			<div id="4" class="carte carte_4" ></div>
+		</div>
+	
+
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		 <script>
+		 $( document ).ready(function() {
+		  
+	var $elem = $('#1');
+
+    // we use a pseudo object for the animation
+    // (starts from `0` to `angle`), you can name it as you want
+    $({deg: 0}).animate({deg: -180}, {
+        duration: 2000,
+        step: function(now) {
+            // in the step-callback (that is fired each step of the animation),
+            // you can use the `now` paramter which contains the current
+            // animation-position (`0` up to `angle`)
+            $elem.css({
+                transform: 'rotateX(' + now + 'deg)',
+				top: -now + 20,
+            });
+			$('#2').css('z-index',-1);
+		 	
+        }
+    });
+	
+	var $ele = $('#3');
+
+    // we use a pseudo object for the animation
+    // (starts from `0` to `angle`), you can name it as you want
+    $({deg: 0}).animate({deg: 180}, {
+        duration: 2000,
+        step: function(now) {
+            // in the step-callback (that is fired each step of the animation),
+            // you can use the `now` paramter which contains the current
+            // animation-position (`0` up to `angle`)
+            $ele.css({
+                transform: 'rotateY(' + now + 'deg)',
+				left: now + 220,
+            });
+			$('#4').css('z-index',-1);
+		 	
+        }
+    });
+	});
+		 </script>
+			</body>
+</html>
