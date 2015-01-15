@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="fr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="fr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+</head>
+
+<body>		
+	<script>
+		$( document ).ready(function() {
+		
+		$.ajax({
+					
+			url: "demo.php",
+			dataType: 'html',                //data format      
+			success: function(data)          //on recieve of reply
+			{   
+				
+				
+						$('#output').append(data);     //Set output element html
+						
+					
+				} 
+			});
+		});
+	</script>
+	<div id="output"></div>
+</body>
+</html>

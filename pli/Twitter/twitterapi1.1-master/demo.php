@@ -1,31 +1,9 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="fr"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="fr"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="fr"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Intégration API Twitter 1.1 | NOE interactive</title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="skinNoe/skin.css" />
 
-<meta name='robots' content='noindex,nofollow' />
-<link rel='stylesheet' id='demo-css'  href='css/twitterapi.css' type='text/css' media='all' />
-
-<meta name="description" content="How to use the latest Twitter 1.1 API, by NOE Interactive, by NOE Interactive" />
-<meta name="keywords" content="Twitter, oAuth, NOE Interactive, php" />
-<link rel="canonical" href="http://noe-interactive.com/demo/!/twitterapi"/>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-
-</head>
-
-<body class="page lang-fr">
-
-
-          
+		
+		  
+		  
                 <?php
-
+				
                     //1 - Settings (please update to math your own)
                     $consumer_key='3FhMfyyBiWRErK01r1YQVOWIS'; //Provide your application consumer key
                     $consumer_secret='JlKHJiOtRf6E5ozfzPCUfauepYC7gegbo0Zu2Ytj7hIOUkGrmn'; //Provide your application consumer secret
@@ -51,8 +29,7 @@
                     }
                     
                     
-                    
-                    
+                
 
                     if(!empty($consumer_key) && !empty($consumer_secret) && !empty($oauth_token) && !empty($oauth_token_secret)) {
                         
@@ -92,17 +69,9 @@ function parseTweet($text) {
     $text = preg_replace('#https://[a-z0-9._/-]+#i', '<a  target="_blank" href="$0">$0</a>', $text); //Links
     return $text;
 }
-
+ 
                 ?>
-            </section>
-        </div>
-    </article>
-</section>
-	</div><!-- #main -->
-
-	<div class="visualClear"></div>
-
- </div><!-- #wrapper -->
-
-</body>
-</html>
+			
+		
+		
+		  
