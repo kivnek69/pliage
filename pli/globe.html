@@ -10,7 +10,6 @@
       body {
         margin: 0;
         padding: 0;
-        background: #ffaaaa url(globe/loading.gif) center center no-repeat;
         color: #ffffff;
         font-family: sans-serif;
         font-size: 13px;
@@ -66,22 +65,28 @@
         font-size: 23px;
         color: #fff;
       }
+      
+      #carte{
+      	width: 700px;
+      	height: 700px;
+        background: #ffaaaa url(globe/loading.gif) center center no-repeat;
+      }
     </style>
   </head>
   <body>
-
-  <div id="container"></div>
-
-  <div id="currentInfo">
-    <span id="year1990" class="year">07/01</span>
-    <span id="year1995" class="year">08/01</span>
-    <span id="year2000" class="year">09/01</span>
-  </div>
-
-  <div id="title">
-    #JeSuisCharlie
-  </div>
-
+	<div id="carte">
+	  <div id="container"></div>
+	
+	  <div id="currentInfo">
+	    <span id="year1990" class="year">07/01</span>
+	    <span id="year1995" class="year">08/01</span>
+	    <span id="year2000" class="year">09/01</span>
+	  </div>
+	
+	  <div id="title">
+	    #JeSuisCharlie
+	  </div>
+	</div>
   <script type="text/javascript" src="http://data-arts.appspot.com/globe/third-party/Three/ThreeWebGL.js"></script>
   <script type="text/javascript" src="http://data-arts.appspot.com/globe/third-party/Three/ThreeExtras.js"></script>
   <script type="text/javascript" src="http://data-arts.appspot.com/globe/third-party/Three/RequestAnimationFrame.js"></script>
@@ -94,7 +99,7 @@
       Detector.addGetWebGLMessage();
     } else {
 
-      var years = ['1990','1995','2000'];
+      var years = ['1990'];
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
       console.log(globe);
@@ -125,12 +130,18 @@
 
 
       xhr = new XMLHttpRequest();
-      xhr.open('GET', 'globe/population909500.json', true);
+      xhr.open('GET', 'globe/date1.json', true);
       xhr.onreadystatechange = function(e) {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
             var data = JSON.parse(xhr.responseText);
             window.data = data;
+            //data[0] = tableau pour la date 0
+            //data[0][0] nom de la date 0
+            //data[0][1] valeurs pour la date 0
+            //data[0][1][0]->1ere latitude
+            //data[0][1][1]->1ere longitude
+            //data[0][1][2]->1ere valeur
             for (i=0;i<data.length;i++) {
               globe.addData(data[i][1], {format: 'magnitude', name: data[i][0], animated: true});
             }
