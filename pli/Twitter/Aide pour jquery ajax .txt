@@ -1,0 +1,12 @@
+
+
+A faire : 
+
+Code pour recuperer les tweet en ajax aprés le chargement de la page  il faut appeller le jquery.ajax dans document.ready.....
+inspirez vous des liens en bas c facile !! MErci 
+
+
+
+
+Lien : http://stackoverflow.com/questions/5004233/jquery-ajax-post-example-with-php ( 2éme reponse)
+Lien : http://blog.teamtreehouse.com/beginners-guide-to-ajax-development-with-php
