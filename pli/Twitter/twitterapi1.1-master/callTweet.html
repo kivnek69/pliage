@@ -14,14 +14,14 @@
 	<script>
 		$( document ).ready(function() {
 		
-		$.ajax({
+			$.ajax({
+						
+				url: "demo.php",
+				dataType: 'html',                //data format      
+				success: function(data)          //on recieve of reply
+				{   
 					
-			url: "demo.php",
-			dataType: 'html',                //data format      
-			success: function(data)          //on recieve of reply
-			{   
-				
-				
+					
 						$('#output').append(data);     //Set output element html
 						
 					
