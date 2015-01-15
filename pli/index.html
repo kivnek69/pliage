@@ -4,23 +4,79 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>1984</title>
 		<link rel="stylesheet" href="charlie.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+		<!--<script type="text/javascript" src="jquery.zoomooz.min.js"></script>-->
+		
+		<script type="text/javascript" src="src/js/jquery.zoomooz-helpers.js"></script>
+		<script type="text/javascript" src="src/js/jquery.zoomooz-anim.js"></script>
+		<script type="text/javascript" src="src/js/jquery.zoomooz-core.js"></script>
+		<script type="text/javascript" src="src/js/jquery.zoomooz-zoomTarget.js"></script>
+		<script type="text/javascript" src="src/js/jquery.zoomooz-zoomButton.js"></script>
+		<script type="text/javascript" src="src/js/jquery.zoomooz-zoomContainer.js"></script>
+		<script type="text/javascript" src="src/js/purecssmatrix.js"></script>
+		<script type="text/javascript" src="src/js/sylvester.src.stripped.js"></script>
+		
+		<link rel="stylesheet" href="website-assets/website.css" type="text/css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+        
+	    <script>
+	        window.hijs = "code.js";
+	    </script>
+		<script>
+		$(document).ready(function() {
+			 var element = $("#element");
+			  $("#1").zoomTo({targetsize:0.75, duration:600});
+			  document.querySelector( '#livre' ).addEventListener( 'click', function( event ) {
+			   var id_voulu = parseInt(event.target.id)+1;
+				  
+				//element = document.getElementById(id_voulu);
+				if(id_voulu > $(".carte").length){
+					
+					//$("#"+$(".carte_test").length).attr('data-closeclick','true');
+					//$("#"+$(".carte_test").length).reset
+					$("#"+$(".carte").length).zoomTo({targetsize:0.10, duration:600});
+				}
+				
+				$("#"+id_voulu).zoomTo({targetsize:0.75, duration:600});
+				
+				
+			  });
+			  
+			// rajouter transformation sur css : transform: rotate(-50deg) translateX(-60px); 
+			// rajouter transformation sur css : transform: skewX(-0.731876rad);
+        //evt.stopPropagation();
+    
+		});
+		</script>
 	</head>
 	<body>
 		<div id="livre">
-			<div id="carte_1" class="carte">1 - ligne continue</div>
-			<div id="carte_2" class="carte">2 - ligne avec zig-zag</div>
-			<div id="carte_3" class="carte">3 - ligne qui s'arrête, mine de crayon qui se casse, bande son de tir</div>
-			<div id="carte_4" class="carte">4 - image blanche</div>
-			<div id="carte_5" class="carte">5 - tweet à chaud</div>
-			<div id="carte_6" class="carte">6 - image Je suis Charlie</div>
-			<div id="carte_7" class="carte">7 - carte des tweets Je suis Charlie</div>
-			<div id="carte_8" class="carte">8 - photo manifestation de foule</div>
-			<div id="carte_9" class="carte">9 - lien tumblr</div>
-			<div id="carte_10" class="carte">10 - lien fête du graphisme</div>
-			<div id="carte_11" class="carte">11 - Couverture de l'édition 1178</div>
-			<div id="carte_12" class="carte">12 - ??</div>
-			<div id="carte_13" class="carte">13 - Trait qui continu</div>
-			<div id="carte_14" class="carte">14 - Liste des noms</div>
+			<div id="1" class="carte carte_1">1 - ligne continue</div>
+			<div id="2" class="carte carte_2">2 - ligne avec zig-zag</div>
+			<div id="3" class="carte carte_3">3 - ligne qui s'arrête, mine de crayon qui se casse, bande son de tir</div>
+			<div id="4" class="carte carte_4">4 - image blanche</div>
+			<div id="5" class="carte carte_5">5 - tweet à chaud</div>
+			<div id="6" class="carte carte_6">6 - image Je suis Charlie</div>
+			<div id="7" class="carte carte_7">7 - carte des tweets Je suis Charlie</div>
+			<div id="8" class="carte carte_8">8 - photo manifestation de foule</div>
+			<div id="9" class="carte carte_9">9 - lien tumblr</div>
+			<div id="10" class="carte carte_10">10 - lien fête du graphisme</div>
+			<div id="11" class="carte carte_11">11 - Couverture de l'édition 1178</div>
+			<div id="12" class="carte carte_12">12 - ??</div>
+			<div id="13" class="carte carte_13">13 - Trait qui continu</div>
+			<div id="14" class="carte carte_14">14 - Liste des noms</div>
 		</div>
+		<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-16288001-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+        
+			</div>
 	</body>
 </html>
