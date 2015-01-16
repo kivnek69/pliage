@@ -14,56 +14,44 @@
 	color:				darkgrey;
 }
 
-img{
-	position: 			absolute;
-}
-
 .carte_1{
-	left: 				0px;
-	top:				0px;
-}
-
-.img_carte_1{
+	background-color: 	aqua;
 	left: 				0px;
 	top:				0px;
 }
 
 .carte_2{
-	left: 				0px;
-	top:				200px;
-}
-
-.img_carte_2{
+	background-color: 	fuchsia;
 	left: 				0px;
 	top:				200px;
 }
 
 .carte_3{
-	left: 				200px;
-	top:				200px;
-}
-
-.img_carte_3{
+	background-color: 	gray;
 	left: 				200px;
 	top:				200px;
 }
 
 .carte_4{
+	background-color: 	olive;
 	left: 				400px;
 	top:				200px;
 }
 
 .carte_5{
+	background-color: 	lime;
 	left: 				400px;
 	top:				0px;
 }
 
 .carte_6{
+	background-color: 	maroon;
 	left: 				600px;
 	top:				200px;
 }
 
 .carte_7{
+	background-color: 	orange;
 	left: 				600px;
 	top:				400px;
 }
@@ -74,21 +62,19 @@ img{
 }
 
 .carte_8{
+	background-color: 	silver;
 	left: 				600px;
 	top:				600px;
 }
 
 .carte_9{
-	left: 				400px;
-	top:				600px;
-}
-
-.img_carte_9{
+	background-color: 	red;
 	left: 				400px;
 	top:				600px;
 }
 
 .carte_10{
+	background-color: 	yellow;
 	left: 				200px;
 	top:				600px;
 }
@@ -98,12 +84,20 @@ img{
 	top:				600px;
 }
 
-.img_carte_11{
-	left: 				0px;
-	top:				600px;
-}
-
 .carte_12{
+	background-color: 	teal;
 	left: 				0px;
 	top:				800px;
+}
+
+.carte_13{
+	background-color: 	lime;
+	left: 				0px;
+	top:				400px;
+}
+
+.carte_14{
+	left: 				200px;
+	top:				400px;
+	width:				400px;
 }
