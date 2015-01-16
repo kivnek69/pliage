@@ -9,8 +9,15 @@
                     //var_dump($xml->channel);
 
                     foreach ($xml->channel->item as $tof) {
-
-                        print_r($tof[0]);
+                      
+                        $string = $tof->description->asXML();
+                        echo $string."<br>";
+                        
+                        $lien_image = "";
+                        
+                        $balise = '/<img src="(.*)"/>/i';
+                        preg_match($balise, $string, $lien_image);
+                        print_r($lien_image);
                        // echo "<img src='".$tof->enclosure["url"]."'/>";
 
 
