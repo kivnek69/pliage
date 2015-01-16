@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Intégration API Twitter 1.1 | NOE interactive</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="skinNoe/skin.css" />
 
 <meta name='robots' content='noindex,nofollow' />
 <link rel='stylesheet' id='demo-css'  href='css/twitterapi.css' type='text/css' media='all' />
@@ -16,8 +15,6 @@
 <meta name="description" content="How to use the latest Twitter 1.1 API, by NOE Interactive, by NOE Interactive" />
 <meta name="keywords" content="Twitter, oAuth, NOE Interactive, php" />
 <link rel="canonical" href="http://noe-interactive.com/demo/!/twitterapi"/>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-
 </head>
 
 <body class="page lang-fr">
@@ -57,19 +54,19 @@
                         
                             if(!empty($content)){ foreach($content as $tweet){
                                 echo'
-								<div class="tweet">
+							
                                 <div class="twitter_status">
-                                    <div class="bloc_content">
-                                        <p class="status tw_status">'.parseTweet($tweet->text).'</p>
-                                    </div>
+								
+                                        <p style="display: none;">'.parseTweet($tweet->text).'</p>
+                                   
                                     <div class="bloc_caption">
                                         <a href="http://twitter.com/'.$tweet->user->screen_name.'">
-                                            <img src="'.$tweet->user->profile_image_url.'" alt="@'.$tweet->user->name.'" class="userimg tw_userimg"/>
-                                            <span class="username tw_username">@'.$tweet->user->screen_name.'</span>
+                                            <img src="'.$tweet->user->profile_image_url.'" style="display: none;" alt="@'.$tweet->user->name.'" class="userimg tw_userimg"/>
+                                            <span class="username tw_username" style="display: none;">@'.$tweet->user->screen_name.'</span>
                                         </a>
-                                        <span class="timestamp tw_timestamp">'.date('d M / H:i',strtotime($tweet->created_at)).'</span>
+                                        <span class="timestamp tw_timestamp" style="display: none;">'.date('d M / H:i',strtotime($tweet->created_at)).'</span>
                                     </div>
-								</div>
+								
                                 </div>';
                             }}
                                 echo'
