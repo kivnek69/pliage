@@ -48,35 +48,27 @@
                     }
                     
                     
-                
-
+					
+				echo '<div style="width:200px; height:200px; display:inline-block;">';
                     if(!empty($consumer_key) && !empty($consumer_secret) && !empty($oauth_token) && !empty($oauth_token_secret)) {
-                        
+                       
                             if(!empty($content)){ foreach($content as $tweet){
-                                echo'
+                                echo '
 							
-                                <div class="twitter_status">
-								
-                                        <p style="display: none;">'.parseTweet($tweet->text).'</p>
-                                   
-                                    <div class="bloc_caption">
-                                        <a href="http://twitter.com/'.$tweet->user->screen_name.'">
-                                            <img src="'.$tweet->user->profile_image_url.'" style="display: none;" alt="@'.$tweet->user->name.'" class="userimg tw_userimg"/>
-                                            <span class="username tw_username" style="display: none;">@'.$tweet->user->screen_name.'</span>
-                                        </a>
-                                        <span class="timestamp tw_timestamp" style="display: none;">'.date('d M / H:i',strtotime($tweet->created_at)).'</span>
-                                    </div>
-								
-                                </div>';
-                            }}
-                                echo'
-                            </p>
-                            <div class="visualClear"></div>
-                        </div>';
-                    } else {
-                        echo'<p>Please update your settings to provide valid credentials</p>';
-                    }
-                    echo '</div>';
+								<a class="tooltip" title="'.($tweet->text).'" > 
+									<div class="twitter_status">                                       
+										<span class="timestamp tw_timestamp" style="display: none;">'.date('d M / H:i',strtotime($tweet->created_at)).'</span>
+								   </div>                               
+								</a>';
+							
+								}}
+									echo'
+								</p>
+								<div class="visualClear"></div>';
+						} else {
+							echo'<p>Please update your settings to provide valid credentials</p>';
+						}
+                echo '</div>';
 
 /*
  * Transform Tweet plain text into clickable text
