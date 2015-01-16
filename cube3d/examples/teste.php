@@ -17,11 +17,8 @@
                         
                         $balise = '/<img src="(.*)"/>/i';
                         preg_match($balise, $string, $lien_image);
+                        
                         print_r($lien_image);
-                       // echo "<img src='".$tof->enclosure["url"]."'/>";
-
-
-
                     }
 
 ?>
