@@ -15,103 +15,19 @@
         
 	    
 	</head>
-	<body>
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+			<!-- front content -->
+			
 		<div id="livre" style="perspective:500px">
 			<div id="1" class="carte carte_1" ></div>
-			<div id="2" class="carte carte_2" ></div>
-			<div id="3" class="carte carte_3" ></div>
-			<div id="4" class="carte carte_4" ></div>
-			<div id="5" class="carte carte_5" ></div>
-			<div id="6" class="carte carte_6" ></div>
-			<div id="7" class="carte carte_7" ></div>
-			<div id="8" class="carte carte_8" ></div>
-			<div id="9" class="carte carte_9" ></div>
-			<div id="10" class="carte carte_10" ></div>
-			<div id="11" class="carte carte_11" ></div>
-			<div id="12" class="carte carte_12" ></div>
-			<div id="13" class="carte carte_13" ></div>
-			
 		</div>
-	
-
-         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		 <script>
-		 $( document ).ready(function() {
-		  
-	var $elem = $('#1');
-
-    // we use a pseudo object for the animation
-    // (starts from `0` to `angle`), you can name it as you want
-    $({deg: 0}).animate({deg: -180}, {
-        duration: 2000,
-        step: function(now) {
-            // in the step-callback (that is fired each step of the animation),
-            // you can use the `now` paramter which contains the current
-            // animation-position (`0` up to `angle`)
-            $elem.css({
-                transform: 'rotateX(' + now + 'deg)',
-				top: -now + 20,
-            });
-			$('#2').css('z-index',-1);
-		 	
-        }
-    });
-	
-	var $ele = $('#3');
-
-    // we use a pseudo object for the animation
-    // (starts from `0` to `angle`), you can name it as you want
-    $({deg: 0}).animate({deg: 180}, {
-        duration: 2000,
-        step: function(now) {
-            // in the step-callback (that is fired each step of the animation),
-            // you can use the `now` paramter which contains the current
-            // animation-position (`0` up to `angle`)
-            $ele.css({
-                transform: 'rotateY(' + now + 'deg)',
-				left: now + 220,
-            });
-			$('#4').css('z-index',-1);
-		 	
-        }
-    });
-	var $el = $('#6');
-
-    // we use a pseudo object for the animation
-    // (starts from `0` to `angle`), you can name it as you want
-    $({deg: 0}).animate({deg: -180}, {
-        duration: 2000,
-        step: function(now) {
-            // in the step-callback (that is fired each step of the animation),
-            // you can use the `now` paramter which contains the current
-            // animation-position (`0` up to `angle`)
-            $el.css({
-                transform: 'rotateX(' + now + 'deg)',
-				top: -now + 220,
-            });
-			$('#7').css('z-index',-1);
-		 	
-        }
-    });
-	var $elem1 = $('#8');
-
-    // we use a pseudo object for the animation
-    // (starts from `0` to `angle`), you can name it as you want
-    $({deg: 0}).animate({deg: -180}, {
-        duration: 2000,
-        step: function(now) {
-            // in the step-callback (that is fired each step of the animation),
-            // you can use the `now` paramter which contains the current
-            // animation-position (`0` up to `angle`)
-            $elem1.css({
-                transform: 'rotateY(' + now + 'deg)',
-				right: -now + 220,
-            });
-			$('#9').css('z-index',-1);
-		 	
-        }
-    });
-	});
-		 </script>
-	</body>
-</html>
+	<div id="livre" style="perspective:250px">
+	<div id="2" class="carte carte_2" ></div>
+		</div>
+		<div class="back">
+			<!-- back content -->
+		</div>
+	</div>
+</div>
