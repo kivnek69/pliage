@@ -79,8 +79,6 @@ body {
                 scene.add( light );
 
                 var geometry = new THREE.BoxGeometry( 0, 100, 100 );
-s
-
 
 
                 for ( var i = 0; i < 2; i ++ ) {
