@@ -10,7 +10,6 @@
         <style>
 body {
     font-family: Monospace;
-				background-color: #f0f0f0;
 				margin: 0px;
 				overflow: hidden;
 			}
@@ -123,7 +122,7 @@ body {
 				raycaster = new THREE.Raycaster();
 
 				renderer = new THREE.WebGLRenderer();
-				renderer.setClearColor( 0xf0f0f0 );
+				renderer.setClearColor( 0xffffff, 0.0 );
 				renderer.setSize(200,200);
 				renderer.sortObjects = false;
 				container.appendChild(renderer.domElement);
